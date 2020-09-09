@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+  <div id="header">
+    <h1>
+      IP Address Tracker
+    </h1>
+    <div id="search-bar-container">
+      <input type="text" name="search" placeholder="Search for any IP address or domain" class="search-bar">
+      <span class="arrow btn"><img src="images/icon-arrow.svg" alt="arrow"></span>
+    </div>
+  </div>
+
+  <div id="results">
+    <div class="ip">IP ADDRESS 
+      <br> <span class="ip-r"></span> </div>
+
+    <div class="location">LOCATION 
+      <br> <span class="location-r"></span></div>
+
+    <div class="timezone">TIMEZONE
+      <br> <span class="timezone-r"></span></div>
+
+    <div class="isp">ISP 
+      <br> <span class="isp-r"></span></div>
+  </div>
+
+  <div id="mapid"></div>
+
+  <!-- IP Address
+  Location
+  Timezone
+  UTC        add offset value dynamically using the API 
+  ISP
+   -->
+
+   <script src="script.js"></script>
+</body>
+</html>
